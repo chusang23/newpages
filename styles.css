@@ -1,5 +1,6 @@
 .pages-body {
     padding-top: 20px;
+    min-height: 100vh;
 }
 
 .header-wrapper {
@@ -7,7 +8,6 @@
     right: 20px;
     top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -20,4 +20,25 @@
     width: 40px;
     border-radius: 20px;
     margin-right: 15px;
+}
+
+.google img{
+    width: 500px;
+    margin-top: 100px;
+}
+
+.search_write-container {
+    justify-content: center;
+}
+
+.search_write-container .search_write-box{
+    background-color: white;
+    width: 200px;
+    font-size: 14px;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: rgba (0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
 }
