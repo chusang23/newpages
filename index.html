@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API 연습</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>my site</h1>
-    <p></p>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-        $.ajax({
-            method: "GET",
-            url: "https://dapi.kakao.com/v3/search/book?target=title",
-            data: { query: "미움받을 용기" },
-            headers: {Authorization: "KakaoAK 377291da0fb6d33becfd36f049a6abf8"}
-        })
-            .done(function (msg) {
-                console.log(msg.documents[0].title);
-                console.log(msg.documents[0].thumbnail);
-                $( "p" ).append( "<strong>"+msg.documents[0].title+"</strong>" );
-                $( "p" ).append( "<img src='"+msg.documents[0].thumbnail+"'/>" );
-            });
-    </script>
-</body>
+    <section>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <i class="fab fa-accusoft"></i>
+                <a href="">DreamCoding</a>
+            </div>
 
+            <div class="navbar__menu">
+                <button>Home</button>
+                <button>Gallery</button>
+                <button>Weddings</button>
+                <button>FAQ</button>
+                <button>Bookings</button>
+            </div>
+
+            <div class="navbar__icon">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </nav>
+    </section>
+</body>
 </html>
